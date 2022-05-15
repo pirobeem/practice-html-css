@@ -1,17 +1,18 @@
 <html>
   <head>
-    <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="./css/contents.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <div id="header" class="wapper">
-      <h1 class="site_title">
+      <h1 class="site-title">
         <a href="index.html"><img src="./img/logo.svg" /></a>
       </h1>
       <nav>
         <ul>
-          <li>About</li>
-          <li>Bicycle</li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#bicycle">Bicycle</a></li>
         </ul>
       </nav>
     </div>
@@ -21,21 +22,45 @@
     <section id="about" class="wapper">
       <h2 class="section-title">About</h2>
       <div class="content">
-        <img src="./img/about.jpg"/>
+        <img src="./img/about.jpg" />
         <div class="text">
-          <h3 class="title">タイトル</h2>
-          <div class="message">
-            テキスト テキスト テキスト テキスト テキスト
-          </div>
+          <h3 class="content_title">タイトル</h3>
+          <p>
+            テキストテキストテキストテキストテキストテキストテキスト
+            テキストテキストテキストテキストテキストテキストテキスト
+            テキストテキストテキストテキストテキストテキストテキスト
+          </p>
         </div>
       </div>
     </section>
-    <section id="bicycle">
-      <div id="bicycle_content_1">
-        <div id="bicycle_content_1_image"></div>
-        <div id="bicycle_content_1_title"></div>
-        <div id="bicycle_content_1_message"></div>
-      </div>
+    <section id="bicycle" class="wapper">
+      <h2 class="section-title">Bicycle</h2>
+      <ul>
+        <li id="bicycle_1">
+          <img src="./img/bicycle1.jpg" />
+          <h3 id="bicycle_content_title_1" class="content_title">
+            タイトルタイトル
+          </h3>
+          <p id="bicycle_content_message_1">テキストテキストテキスト</p>
+        </li>
+        <li id="bicycle_2">
+          <img src="./img/bicycle2.jpg" />
+          <h3 id="bicycle_content_title_2" class="content_title">
+            タイトルタイトル
+          </h3>
+          <p id="bicycle_content_message_2">テキストテキストテキスト</p>
+        </li>
+        <li id="bicycle_3">
+          <img src="./img/bicycle3.jpg" />
+          <h3 id="bicycle_content_title_3" class="content_title">
+            タイトルタイトル
+          </h3>
+          <p id="bicycle_content_message_3">テキストテキストテキスト</p>
+        </li>
+      </ul>
     </section>
+    <div id="footer">
+      <p>© 2020 Profile</p>
+    </div>
   </body>
 </html>
